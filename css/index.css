@@ -1,0 +1,77 @@
+.landing-section {
+  height: 100vh;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.626), rgba(0, 0, 0, 0.641)),
+    url(../imgs/hero.jpg);
+  background-size: cover;
+  background-position: center;
+}
+
+header {
+  padding: 3rem 3rem;
+}
+
+section:nth-child(2) {
+  padding: 3rem 3rem;
+}
+section {
+  padding: 0 3rem 3rem;
+}
+
+/* Hiding nav links in mobile device */
+.main-nav-list {
+  display: none;
+}
+
+/* Burger menu */
+.bar {
+  width: 20px;
+  height: 2px;
+  margin-bottom: 2px;
+  background-color: white;
+}
+
+.bar:nth-child(2) {
+  width: 15px;
+  position: relative;
+  left: 5px;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo-txt {
+  color: rgb(227, 227, 227);
+  text-transform: uppercase;
+}
+
+@media screen and (min-width: 850px) {
+  .burger-menu {
+    display: none;
+  }
+
+  header {
+    display: block;
+    max-width: 1000px;
+    margin: 0 auto;
+  }
+  .main-nav {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .main-nav-list {
+    background-color: gray;
+    display: flex;
+    width: 600px;
+    justify-content: space-between;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  header {
+    max-width: 1140px;
+  }
+}
